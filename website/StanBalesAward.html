@@ -1,0 +1,158 @@
+<!-- Written By Tymon Domanko. Contact at Tymon1996@gmail.com for support -->
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <!-- Name of page that will show up in the tab -->
+    <title>ER: Stan Bales Award</title>
+    <!-- Loads in jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!-- Loading in bootstrap to make stuff easier -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <!-- Makes the site more mobile friendly, maybe -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Loads in Text Styles-->
+
+    <!-- Loads in the stylesheets -->
+    <link href="ResourcesFolder/CSS/Main.css" rel="stylesheet"/>
+    
+    <!-- Loads in the Epping Rovers Icon -->
+    <link href="ResourcesFolder/Images/EppingRovers.ico" rel="icon" type="image/x-icon"/>
+    <!-- Sets the site for search browsers to link to -->
+    <!--<link href="EppingRovers.com" rel="canonical"/>-->
+
+</head>
+
+<body>
+<!-- Setup Facebook Java SDK -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.3&appId=650242765098592";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- End Facebook Java SDK Setup -->
+
+<!-- Sets up Navigation bar -->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="navigation-Bar">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#epping-rovers-navbar-collapse">
+            <span class="sr-only">Epping Rovers</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand">Epping Rovers</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="epping-rovers-navbar-collapse">
+        <ul class="nav navbar-nav navbar-left">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Calendar.html">Calendar</a></li>
+            <li><a href="Resources.html">Resources</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="ContactUs.html">Contact Us</a></li>
+            <li class="dropdown active">
+                <a href="" class="dropdown-toggle" data-toggle="dropdown">About Us <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li class="active"><a href="AboutUs.html">About Us</a></li>
+                    <li><a href="FAQ.html">FAQ</a></li>
+                    <li><a href="CrewHistory.html">History</a></li>
+                    <li><a href="CrewAchievements.html">Crew Achievements</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+</nav>
+<!-- End Navigation bar Setup -->
+
+
+<!-- Jumbotron Setup -->
+<div id="jumbotron" class="jumbotron hidden-xs hidden-sm">
+    <div class="container">
+        <h1>Epping Rovers: Stan Bales Award</h1>
+        <p> The oldest continuously running Rover Crew in the World.</p>
+    </div>
+</div>
+<!-- End Jumbotron Setup -->
+
+<!-- Sets up a social slider with links to social media -->
+<div id="social_media_slider" class="social_media_slider">
+    <div id="container">
+        <!-- Directs them to the fb page -->
+        <div id="facebook-slider"><a href="https://www.facebook.com/EppingRovers" target="_blank"><img src="ResourcesFolder/Images/FacebookIcon.png" alt="Facebook link"/></a></div>
+        <!-- Directs them to the twitter page -->
+        <div id="twitter-slider"><a href="https://twitter.com/eppingrovers" target="_blank"><img src="ResourcesFolder/Images/TwitterIcon.png" alt="Twitter link"/></a></div>
+        <!-- Directs them to Google + -->
+        <div id="google-plus-slider"><a href="https://plus.google.com/102127383348701692591" target="_blank"><img src="ResourcesFolder/Images/GooglePlusIcon.png" alt="Google+ link"/></a></div>
+        <!-- Directs them to flickr -->
+        <div id="flickr-slider><a href="https://www.flickr.com/photos/131599674@N08/" target="_blank"><img src="ResourcesFolder/Images/FlickrIcon.png" alt="Flickr link"> </a></div>
+    </div>
+</div><!-- End Social Slider Setup -->
+
+<!-- Mobile Title Setup -->
+<div id="mobile-title" class="visible-xs visible-sm">
+    <h2>Stan Bales Award</h2>
+</div>
+<!-- End Mobile Title Setup -->
+
+<!-- Setup Main Content -->
+<div id="main-content">
+<p>The Stan Bales Rover Service Award is an award that may be made by the Rover Section to recognise a person who
+        has given exceptional service to the Rover Section.</p>
+    <p>Members or Ex-members of Epping who have received the award include:</p>
+    <ul>
+        <li>2012 - Pete Favelle</li>
+                
+        <li>2011 - Andy Davis</li>
+        <li>2006 - John Williams</li>
+    </ul>
+</div>
+<!-- End Main Content Setup -->
+
+
+<!-- Sets up Facebook feed -->
+    <div id="fb-feed" class="fb-feed">
+        <div class="hidden-xs hidden-sm">
+            <div class="fb-page"
+            data-href="https://www.facebook.com/EppingRovers"
+             data-width="300"
+              data-height="900"
+               data-hide-cover="false"
+                data-show-facepile="true"
+                 data-show-posts="true">
+                <div class="fb-xfbml-parse-ignore">
+                    <blockquote cite="https://www.facebook.com/EppingRovers">
+                        <a href="https://www.facebook.com/EppingRovers">1st Epping Rovers</a>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- End Facebook feed Setup -->
+
+<!-- Footer Setup -->
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="container-fluid" id="left-container">
+                <p>©2015 1st Epping Rovers, <a href="http://www.scouts.com.au/">Scouts Australia</a>,
+                    <a href="http://www.rovers.com.au/">Rovers Australia</a>, <a href="http://www.nsw.scouts.com.au/">Scouts NSW</a>,
+                    <a href="http://nsw.rovers.com.au/">Rovers NSW</a>, <a href="http://www.eppingscouts.com.au/"> Epping Scouts</a></p>
+            </div>
+            <div class="container-fluid" id="right-container">
+                <p>CrewLeader@EppingRovers.com</p>
+            </div>
+        </div>
+    </footer><!-- End Footer Setup -->
+
+</body>
+</html>
