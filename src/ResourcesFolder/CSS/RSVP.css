@@ -1,0 +1,48 @@
+/* Written By Tymon Domanko. Contact at Tymon1996@gmail.com for support */
+/* Form Setup */
+.form-control:focus {
+    background-color: rgba(177, 7, 0, 0.10);
+    outline-color: #ab0101;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #ab0101;
+}
+
+.form-horizontal {
+    margin-top: .5em;
+}
+
+.form-control {
+    width: 20em;
+    max-width: 800px;
+    margin-left: 40px;
+}
+
+.form-horizontal .form-group .btn-default {
+    margin-left: 40px;
+    background-color: #AB0101;
+    color: #FFFFFF;
+    width: 20em;
+}
+
+#mobile-title {
+    margin-left: 60px;
+}
+
+@media (min-width: 992px) {
+    .form-control {
+        width: 30em;
+        margin-left: 50%;
+    }
+    .form-horizontal .form-group .btn-default {
+        width: 30em;
+        margin-left: 50%;
+    }
+}
+/* End Form Setup */
+
+
+@media (min-width: 992px) {
+    #text {
+        width: 30em;
+        margin-left: 50%;
+    }
+}

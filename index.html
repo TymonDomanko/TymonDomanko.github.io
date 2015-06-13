@@ -1,90 +1,215 @@
+<!-- Written By Tymon Domanko. Contact at Tymon1996@gmail.com for support -->
 <!DOCTYPE html>
 <html>
+
 <head lang="en">
     <meta charset="UTF-8">
-    <!-- Name of Page that will show up in the tab -->
-    <title>Tymon Domanko</title>
-    <!-- Loads in Jquery -->
+    <!-- Name of page that will show up in the tab -->
+    <title>Epping Rovers</title>
+    <!-- Loads in jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <!-- Loads in Bootstrap to make stuff easier -->
+    <!-- Loading in bootstrap to make stuff easier -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    <!-- Makes the site more mobile friendly -->
+    <!-- Makes the site more mobile friendly, maybe -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <!-- Loads in text styles -->
+    <!-- Loads in BlogEntries Styles-->
 
-    <!-- Loads in the main stylesheet (makes the pretties) -->
-    <link href="Main.css" rel="stylesheet">
-    <!-- Loads in an Icon -->
-    <link href="" rel="icon" type="image/x-icon"/>
+    <!-- Loads in the stylesheets -->
+    <link href="ResourcesFolder/CSS/Main.css" rel="stylesheet"/>
+    <link href="ResourcesFolder/CSS/index.css" rel="stylesheet"/>
+    <!-- Loads in the Epping Rovers Icon -->
+    <link href="ResourcesFolder/Images/EppingRovers.ico" rel="icon" type="image/x-icon"/>
     <!-- Sets the site for search browsers to link to -->
-    <link href="TymCraft.PlayAT.CH" rel="canonical">
+    <link href="EppingRovers.com" rel="canonical"/>
+
 </head>
-    <div id="navbar" class="navbar">
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">Tymon Domanko</a>
-                </div>
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li><a href="#">Link</a></li>
-                        <!-- <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Website Testing <span class="caret"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">One more separated link</a></li>
-                            </ul>
-                        </li> -->
-                    </ul>
-                    <!--<form class="navbar-form navbar-left" role="search">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Search">
-                        </div>
-                        <button type="submit" class="btn btn-default">Submit</button>
-                    </form> -->
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Link</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Website Testing <span class="caret"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="/EppingRovers/index.php">Epping Rovers</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">One more separated link</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
-        </nav>
-    </div>
-    <div id="content" class="content">
-        <div id="part1"></div>
-        <div id="part2"></div>
-
-    </div>
-    <div id="footer" class="footer">
-
-    </div>
 <body>
+<!-- Setup Facebook Java SDK -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.3&appId=650242765098592";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- End Facebook Java SDK Setup -->
 
+<!-- Sets up Navigation bar -->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="navigation-Bar">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#epping-rovers-navbar-collapse">
+            <span class="sr-only">Epping Rovers</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand">Epping Rovers</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="epping-rovers-navbar-collapse">
+        <ul class="nav navbar-nav navbar-left">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="Calendar.html">Calendar</a></li>
+            <li><a href="Resources.html">Resources</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="ContactUs.html">Contact Us</a></li>
+            <li class="dropdown">
+                <a href="" class="dropdown-toggle" data-toggle="dropdown">About Us <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="AboutUs.html">About Us</a></li>
+                    <li><a href="FAQ.html">FAQ</a></li>
+                    <li><a href="CrewHistory.html">History</a></li>
+                    <li><a href="CrewAchievements.html">Crew Achievements</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+</nav>
+<!-- End Navigation bar Setup -->
+
+
+<!-- Jumbotron Setup -->
+<div id="jumbotron" class="jumbotron hidden-xs hidden-sm">
+    <div class="container">
+        <h1>Epping Rovers</h1>
+        <p class="catch-phrases"><span style="color: rgba(255, 255, 255, 0); text-shadow: 0 0 rgba(255, 255, 255, 0);">|</span></p>
+        <script>
+        // Catch phrase setup
+        var $CatchPhrase = new Array();
+        $CatchPhrase.push("The oldest continuously running Rover Crew in the World.");
+        $CatchPhrase.push("We don't do things by halves.");
+        $CatchPhrase.push("Do stuff.");
+
+        $CatchPhrase = $CatchPhrase[Math.floor(Math.random()*$CatchPhrase.length)];
+        $(".catch-phrases").append($CatchPhrase);
+        </script>
+    </div>
+</div>
+<!-- End Jumbotron Setup -->
+
+<!-- Sets up a social slider with links to social media -->
+<div id="social_media_slider" class="social_media_slider">
+    <div id="container">
+        <!-- Directs them to the fb page -->
+        <div id="facebook-slider"><a href="https://www.facebook.com/EppingRovers" target="_blank"><img src="ResourcesFolder/Images/FacebookIcon.png" alt="Facebook link"/></a></div>
+        <!-- Directs them to the twitter page -->
+        <div id="twitter-slider"><a href="https://twitter.com/eppingrovers" target="_blank"><img src="ResourcesFolder/Images/TwitterIcon.png" alt="Twitter link"/></a></div>
+        <!-- Directs them to Google + -->
+        <div id="google-plus-slider"><a href="https://plus.google.com/102127383348701692591" target="_blank"><img src="ResourcesFolder/Images/GooglePlusIcon.png" alt="Google+ link"/></a></div>
+        <!-- Directs them to flickr -->
+        <div id="flickr-slider><a href="https://www.flickr.com/photos/131599674@N08/" target="_blank"><img src="ResourcesFolder/Images/FlickrIcon.png" alt="Flickr link"> </a></div>
+    </div>
+</div><!-- End Social Slider Setup -->
+
+<!-- Mobile Title Setup -->
+<div id="mobile-title" class="visible-xs visible-sm">
+    <h2></h2>
+</div>
+<!-- End Mobile Title Setup -->
+
+<!-- Setup Main Content -->
+<div id="main-content" class="main-content">
+<div class="post-out"><div class="post"><h5>Friday, June 12, 2015</h5><div class="content"><h4>Test 4</h4>
+<p><em><strong>Overflowing text to show scroll behavior</strong></em></p>
+<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p></div></div></div><div class="post-out"><div class="post"><h5>Friday, June 12, 2015</h5><div class="content"><h3>Test 3</h3>
+<p>*Overflowing text to show scroll behavior</p>
+<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.*</p></div></div></div><div class="post-out"><div class="post"><h5>Friday, June 12, 2015</h5><div class="content"><h5>Test5</h5>
+<p>Overflowing text to show scroll behavior</p>
+<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p></div></div></div><div class="post-out"><div class="post"><h5>Thursday, June 11, 2015</h5><div class="content"><h3>Test 2</h3>
+<p>a1fgkjsajfgjksvbkja<br />
+<a href="https://www.facebook.com">https://www.facebook.com</a><br />
+gshfh</p></div></div></div><div class="post-out"><div class="post"><h5>Thursday, June 11, 2015</h5><div class="content"><h2>test 1</h2>
+<p>banananagdfgsdgfd<br />
+<img src="ResourcesFolder/Images/GooglePlusIcon.png" alt="Markdown Logo" /></p>
+<p>![missing reference]</p></div></div></div><div class="post-out"><div class="post"><h5>Friday, May 29, 2015</h5><div class="content"><p>So there hasn't been any activities with the Venturer's since the AGM.<br />
+Although There wasn't many events held the VLO's have surveyed the Venturers about what they would like to see again/what they would like us to run.<br />
+The Venturers Enjoyed The Trivia Night, The Movie Night, Hanging Soccer and Freaky Friday; so these will likely be seen again.<br />
+They also Said that they would like to see Competitive nights, Competeing in Construction activities and/or Sports wide games such as Spotlight and/or a Cork skirmish etc.. </p>
+<p>Next week we will also be looking for people who will run some of those nights.<br />
+We will also be implementing a new stratergy at the planning night next week where we will mark nights that are good for venturers to come along. The VLO's will arrange for them to be invited or go and personally invite them, this is to try and accustomise the venturers to what we actually do instead of how we run nights solely for them. This will be run along side the Current Rover Venture nights. </p>
+<p>There are lots of venturers turning 18 in the next year 2 from Epping and 11 from Beecroft and apparently none from Moocooboolah.</p></div></div></div>
+</div>
+<!-- End Main Content Setup -->
+
+
+<!-- Sets up Facebook feed -->
+    <div id="fb-feed" class="fb-feed hidden-xs hidden-sm">
+    </div>
+
+    <!-- End Facebook feed Setup -->
+
+<!-- Footer Setup -->
+    <footer class="footer">
+
+    </footer><!-- End Footer Setup -->
+<script>
+    // Start footer setup
+    var $WindowHeight = $(window).height();
+    var $NavagationBarHeight = $("nav").height();
+    var $JumbotronHeight = $(".jumbotron").height() + 30;
+    var $MobileTitle = $("#mobile-title").height();
+    var $MainContentHeight = $("#main-content").height();
+    var $FooterHeight = $("footer").height();
+
+    if ($WindowHeight > ($JumbotronHeight + $NavagationBarHeight + $MobileTitle + $MainContentHeight + $FooterHeight + 96)) {
+        var $NewHeight = $WindowHeight - ($NavagationBarHeight + $MobileTitle + $JumbotronHeight + $FooterHeight + 96);
+        $(".main-content").height($NewHeight + 5);
+    }
+    var $footer = '<div class="container-fluid"><div class="container-fluid" id="left-container">' +
+            '<p>©2015 1st Epping Rovers, <a href="http://www.scouts.com.au/">Scouts Australia</a>,' +
+            '<a href="http://www.rovers.com.au/"> Rovers Australia</a>, <a href="http://www.nsw.scouts.com.au/">Scouts NSW</a>,' +
+            '<a href="http://nsw.rovers.com.au/"> Rovers NSW</a>, <a href="http://www.eppingscouts.com.au/"> Epping Scouts</a></p>' +
+            '</div>' +
+            '<div class="container-fluid" id="right-container">' +
+            '<a href="mailto:CrewLeader#EppingRovers.com?subject=Website Contact" target="_blank">CrewLeader@EppingRovers.com</p>' +
+            '</div> </div>';
+    $("footer").append($footer);
+    // End footer setup
+
+    // Start FB setup
+    if ($MainContentHeight < $NewHeight){ $MainContentHeight = $NewHeight }
+    $MainContentHeight = $MainContentHeight - 5;
+    // Sets the containing div's height
+    $("#fb-feed").height($MainContentHeight);
+    // Changes the height of the page Plugin
+    var $FBFeed = '<div class="fb-page" data-href="https://www.facebook.com/EppingRovers" data-width="100%" data-height="' + $MainContentHeight + '" data-hide-cover="false" data-show-facepile="true" data-show-posts="true">' +
+            '<div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/EppingRovers"><a href="https://www.facebook.com/EppingRovers">1st Epping Rovers</a></blockquote></div> </div> </div>';
+    // Adds the page plugin with custom page height
+    $(".fb-feed").append($FBFeed);
+    // End FB setup
+
+
+</script>
 </body>
 </html>

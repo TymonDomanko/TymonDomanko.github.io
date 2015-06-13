@@ -1,0 +1,296 @@
+/* Written By Tymon Domanko. Contact at Tymon1996@gmail.com for support */
+/* Contains Cascading Styling Script which is all required for most pages */
+/* Setup Navigation bar */
+/* Setup Main Navigation Bar */
+.navbar-default {
+    background-color: #d40000;
+    border-color: #ab0101;
+    font-weight: bold;
+    margin-bottom: 0px;
+    font-size: 1.2em;
+}
+
+body {
+    padding-top: 50px;
+}
+.navbar-right {
+    padding-right: 1%;
+}
+.navbar-default .navbar-brand {
+    color: #ffffff;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #ffffff;
+}
+.navbar-default .navbar-text {
+    color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #ffffff;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu {
+    background-color: #d40000;
+    font-weight: bold;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a {
+    color: #ffffff;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
+    color: #ffffff;
+    background-color: #ab0101;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > .divider {
+    background-color: #d40000;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #ffffff;
+    background-color: #ab0101;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #ffffff;
+    background-color: #ab0101;
+}
+.navbar-default .navbar-toggle {
+    border-color: #ab0101;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #ab0101;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    border-color: #ffffff;
+}
+.navbar-default .navbar-link {
+    color: #ffffff;
+}
+.navbar-default .navbar-link:hover {
+    color: #ffffff;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #FFFFFF;
+    background-color: #ab0101;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color: #FFFFFF;
+    background-color: #AB0101;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ffffff;
+    background-color: #ab0101;
+}
+/* End Main Navbar Setup */
+
+/* Setup Mobile Dropdown menu*/
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #ffffff;
+    }
+
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #ffffff;
+    }
+}
+/* End Mobile Dropdown Setup */
+
+/* Setup Large Device Navbar Styling */
+@media (min-width:767px) {
+    .navbar-brand
+    {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        text-align: center;
+        margin: auto;
+        font-size: 1.3em;
+    }
+}
+/* End Large Device Navbar Styling Setup */
+/* End Navigation Bar Setup */
+
+/* Footer Setup */
+.footer {
+    position: static;
+    clear: both;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    background-color: rgba(171, 1, 1, 0.25);
+}
+.footer #left-container{
+    float: left;
+    text-align: left;
+}
+
+.footer #right-container{
+    float: right;
+    text-align: right;
+}
+/* End Footer Setup */
+
+/* Jumbotron setup */
+.jumbotron {
+    background: rgba(171, 1, 1, 0.76) url("../Images/Jumbotron1.png") no-repeat center;
+    background-size: contain;
+    color: #FFFFFF;
+    padding: 88px 120px 8px 18px;
+}
+
+.jumbotron .container h1 {
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black, -2px -2px black, 2px 2px black, -2px 2px black, 2px -2px black;
+}
+.jumbotron .container p {
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+/* End Jumbotron setup */
+
+
+/* Sets up Social Media Slider */
+.social_media_slider #container {
+    border-radius: 5px;
+    display: inline-block;
+    background-color: rgba(171, 1, 1, 0.33);
+    padding: 3px 4px 3px 10px;
+    position: fixed;
+    margin-left: -8px;
+    top: 50%;
+    margin-top: -65px;
+    z-index: 1;
+}
+
+#facebook-slider {
+    padding-top: 1px;
+}
+
+#twitter-slider {
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+#twitter-slider img {
+    height:30px;
+    width:30px;
+    margin-left: 1px;
+}
+#google-plus-slider {
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+/* End Social Slider Setup */
+
+/* Setup Highlighting Color Change */
+::selection {
+    background: rgba(171, 1, 1, 0.33); /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+    background: rgba(171, 1, 1, 0.33); /* Gecko Browsers */
+}
+/* End Highlighting Color Change Setup */
+
+/* Link Colorization Setup */
+a:link {
+    color: #FF0000;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #d40000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ab0101;
+    text-decoration: none;
+}
+
+a:active {
+    color: #ab0101;
+    text-decoration: none;
+}
+/* End Link Colorization Setup */
+
+/*Setup Main content*/
+
+#mobile-title {
+    margin-left: 4%;
+}
+
+#main-content {
+    float: left;
+    display: inline-block;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+@media (min-width: 992px) {
+    #main-content {
+        max-width: 60%;
+    }
+}
+
+@media (min-width: 890px) and (max-width: 1020px) {
+    #main-content {
+        max-width: 55%;
+    }
+}
+@media (max-width: 991px) {
+    #main-content {
+        margin-left: 9%;
+    }
+}
+/* End Main Content Setup */
+
+/*Sets up FB Feed*/
+#fb-feed {
+    float: right;
+    margin-right: 2%;
+    z-index: 1;
+    min-width: 300px;
+    }
+/* End FB Feed Setup */
+
+/* Form Colorization Setup*/
+.form-control:focus {
+    background-color: rgba(177, 7, 0, 0.10);
+    outline-color: #ab0101;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #ab0101;
+}
+
+.btn:focus {
+    background-color: rgba(177, 7, 0, 0.10);
+    outline-color: #ab0101;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #ab0101;
+}
+.panel-heading {
+    background-color: #d40000 !important;
+    color: #FFFFFF !important;
+    cursor: pointer;
+    text-align: center;
+}
+
+.panel-title {
+    font-weight: bold;
+}
+
+/* End Form Colorization Setup */
