@@ -3,7 +3,7 @@ require_once('Classes/Layout.php');
 
     function ContactUsForm($Position){
         $ReturnString = Null;
-        $configs = require_once("Config/CrewPositions.php");
+        $configs = require("Config/CrewPositions.php");
         $ShortPositions = str_replace(' ', '', $Position);
         $Person = $configs[$ShortPositions];
         $Email = $ShortPositions . '@eppingRovers.com';
