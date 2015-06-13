@@ -1,0 +1,45 @@
+/* Written By Tymon Domanko. Contact at Tymon1996@gmail.com for support */
+/* Form Setup */
+.button {
+    border-radius: 5px;
+    width: 16em;
+    margin-top: 2px;
+    background-color: #d40000;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+    min-height: 40px;
+}
+.button p {
+    text-align: center;
+    padding-top: 7px;
+}
+
+@media (min-width:767px) {
+    #positions .button {
+        width: 35em;
+    }
+}
+/* End Form Setup */
+
+/* Link Colorization Setup */
+#positions a:link {
+    color: #FFFFFf;
+    text-decoration: none;
+}
+
+#positions a:visited {
+    color: #FFFFFf;
+    text-decoration: none;
+}
+
+#positions a:hover {
+    color: #FFFFFf;
+    text-decoration: none;
+}
+
+#positions a:active {
+    color: #FFFFFf;
+    text-decoration: none;
+}
+/* End Link Colorization Setup */
