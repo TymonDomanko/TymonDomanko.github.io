@@ -11,6 +11,15 @@ function RecursiveCopy($Source,$Destination) {
             // Copies folders inside folder
             if ( is_dir($Source . '/' . $file) ) {
                 RecursiveCopy($Source . '/' . $file,$Destination . '/' . $file);
+            } elseif (stristr($file, '.php') !== false) {
+                $File = explode('.', $file);
+                $File = $File[0];
+                ob_start();
+                include_once($Source . '/' . $file);
+                $HTML = ob_get_contents();
+                $HTML = str_replace('.php', '.html', $HTML);
+                file_put_contents($Destination . '/' . $File . '.html', $HTML);
+                ob_end_clean();
             }
             else {
                 // Copies Files to respective folder
@@ -62,6 +71,7 @@ function Zipper($Source, $Destination){
     // Zip archive will be created only after closing object
     $zip->close();
 }
+
 
 Zipper('../', 'ResourcesFolder/Downloads/WebsiteGenerator');
 // Creates temp out folder for output to be copied to zip

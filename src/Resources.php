@@ -12,9 +12,9 @@ require_once('Classes/Layout.php');
         $NamePieces = preg_split('/(?=[A-Z])/', $Name[0]);
         $ExpandedName = Null;
         foreach ($NamePieces as $NamePiece){
-            $ExpandedName = $ExpandedName . " " . $NamePiece;
+            $ExpandedName .= " " . $NamePiece;
         }
-        $ReturnString = $ReturnString . '<li><a href="' . $Dir . '/' . $File . '" >' . $ExpandedName . '</a></li>';
+        $ReturnString .= '<li><a href="' . $Dir . '/' . $File . '" >' . $ExpandedName . '</a></li>';
     };
 
      if ($ReturnString === Null){

@@ -29,7 +29,7 @@ function history (){
         $OpenValue = fopen($path, 'r');
         $ParseDown = new Parsedown();
         $ParseDown->setBreaksEnabled(true);
-        $ReturnString = $ReturnString .
+        $ReturnString .=
             '<div class="panel panel-default">
                 <div class="panel-heading collapsed" role="tab" id="heading' . $i . '" data-toggle="collapse" data-parent="#accordion" href="#collapse' . $i . '" aria-expanded="true" aria-controls="collapse' . $i . '">
                     <h4 class="panel-title">

@@ -1,5 +1,5 @@
 <?php
-require_once('../../Classes/Layout.php');
+require_once('Classes/Layout.php');
 
 $content = '<iframe width="420" height="315" src="https://www.youtube.com/embed/J9FImc2LOr8?autoplay=1&loop=1" frameborder="0" allowfullscreen></iframe>';
 

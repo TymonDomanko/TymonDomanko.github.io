@@ -20,26 +20,37 @@ function blog(){
         }
         $FileNamesWithEditTimes[$ModificationTime] = $File;
     }
+
     // Sorts the file names by there modification date using the key from newest to oldest
     krsort($FileNamesWithEditTimes);
 
     // displays final order
+    $i = 0;
     foreach ($FileNamesWithEditTimes as $key => $value) {
+        $i = $i + 1;
+        if ($i > 3) {$x = ' hideable hidden';} else {$x = '';}
         require_once('Classes/parsedown.php');
         $path = 'ResourcesFolder/BlogEntries/' . $value;
         $date = date('l, F j, Y',$key);
         $OpenValue = fopen($path, 'r');
         $ParseDown = new Parsedown();
         $ParseDown->setBreaksEnabled(true);
-        $ReturnString = $ReturnString . '<div class="post-out"><div class="post">' . '<h5>' . $date . '</h5><div class="content">' .
+        $ReturnString .= '<div class="post-out ' . $i . $x . '"><div class="post">' . '<h5>' . $date . '</h5><div class="content">' .
             $ParseDown->text(fread($OpenValue, filesize($path))) . "</div></div></div>";
         fclose($OpenValue);
     }
+
     return $ReturnString;
 }
 
 
-$content = '' . blog() . '';
+$content = '' . blog() . '<div class="c-button"> Show more </div><script>
+$(".c-button").click(function(){
+    $(".hideable").toggleClass("hidden");
+    var $text = $(".c-button").text();
+    if ($text == " Show more "){$(".c-button").text(" Show less ")} else {$(".c-button").text(" Show more ")}
+});
+</script>';
 
 $index = new Layout(Null, $content, 'Home', Null, 'index');
 echo $index->Layout();
