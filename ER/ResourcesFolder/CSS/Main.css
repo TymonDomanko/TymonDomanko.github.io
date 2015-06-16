@@ -294,3 +294,19 @@ a:active {
 }
 
 /* End Form Colorization Setup */
+
+.hidden {
+    visibility: hidden;
+}
+
+.c-button {
+    width: 100%;
+    cursor: pointer;
+    color: #FFFFFF;
+    background-color: #d40000;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;
+}
