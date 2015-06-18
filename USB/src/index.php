@@ -44,7 +44,8 @@ function blog(){
 }
 
 
-$content = '' . blog() . '<div class="c-button"> Show more </div><script>
+$content = '<div id="flickr_badge_wrapper" class="hidden-xs hidden-sm"><script type="text/javascript" src="http://www.flickr.com/badge_code.gne?count=14&display=random&size=thumb&nsid=131599674@N08&raw=1"></script></div>'
+    . blog() . '<div class="c-button"> Show more </div><script>
 $(".c-button").click(function(){
     $(".hideable").toggleClass("hidden");
     var $text = $(".c-button").text();

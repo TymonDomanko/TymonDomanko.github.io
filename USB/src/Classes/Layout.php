@@ -189,7 +189,7 @@ class Layout {
         <!-- Directs them to Google + -->
         <div id="google-plus-slider"><a href="' . $this->GooglePlus . '" target="_blank"><img src="' . $this->Root . 'ResourcesFolder/Images/GooglePlusIcon.png" alt="Google+ link"/></a></div>
         <!-- Directs them to flickr -->
-        <div id="flickr-slider><a href="' . $this->Flickr .'" target="_blank"><img src="' . $this->Root . 'ResourcesFolder/Images/FlickrIcon.png" alt="Flickr link"> </a></div>
+        <div id="flickr-slider"><a href="' . $this->Flickr . '" target="_blank"><img src="' . $this->Root . 'ResourcesFolder/Images/FlickrIcon.png" alt="Flickr link"></a></div>
     </div>
 </div><!-- End Social Slider Setup -->
 

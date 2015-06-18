@@ -29,3 +29,13 @@
         min-height: 800px;
     }
 }
+
+.flickrimg {
+    padding: 0px;
+    margin: 2px;
+}
+
+#flickr_badge_wrapper {
+    width: 100%;
+    text-align: center;
+}
