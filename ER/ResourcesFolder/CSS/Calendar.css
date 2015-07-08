@@ -3,23 +3,4 @@
 #calendar {
     display: inline-block;
 }
-
-#normal-calendar {
-    margin-left: 10%;
-    width: 100%;
-    float: left;
-}
-#tablet-calendar {
-    margin-left: 6%;
-    width: 100%;
-    float: left;
-}
-#mobile-calendar {
-    margin-left: 36px;
-}
-@media (max-width: 1204px) {
-    #fb-feed {
-        display: none;
-    }
-}
 /* End Calendar Setup */

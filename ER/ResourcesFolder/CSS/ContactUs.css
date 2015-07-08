@@ -9,6 +9,11 @@
     font-size: 1.2em;
     text-align: center;
     min-height: 40px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
 }
 .button p {
     text-align: center;
@@ -41,5 +46,13 @@
 #positions a:active {
     color: #FFFFFf;
     text-decoration: none;
+}
+
+#positions .button:hover {
+    -webkit-transform: scale(1.05, 1.2);
+    -moz-transform: scale(1.05, 1.2);
+    -ms-transform: scale(1.05, 1.2);
+    -o-transform: scale(1.05, 1.2);
+    transform: scale(1.05, 1.2);
 }
 /* End Link Colorization Setup */
