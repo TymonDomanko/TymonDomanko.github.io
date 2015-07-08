@@ -30,7 +30,7 @@ $(window).resize(function() {
 
     var $WindowWidth = $(window).width();
     var $FacebookWidth = fbdiv.width();
-    MainContent.css('max-width', $WindowWidth - ($FacebookWidth + $TotalHorizontalPadding));
+    MainContent.css('width', $WindowWidth - ($FacebookWidth + $TotalHorizontalPadding));
 });
 
 var main = function() {
