@@ -3,7 +3,7 @@ var footer = $('footer');
 var MainContent = $("#main-content");
 var Post = $('.post');
 
-var $TotalHorizontalPadding = 70;
+var $TotalHorizontalPadding = 75;
 
 $(window).resize(function() {
     var $WindowHeight = $(window).height();
