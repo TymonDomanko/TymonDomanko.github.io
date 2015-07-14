@@ -1,6 +1,7 @@
 var fbdiv = $('#fb-feed');
 var footer = $('footer');
 var MainContent = $("#main-content");
+var Post = $('.post');
 
 var $TotalHorizontalPadding = 70;
 
@@ -30,7 +31,9 @@ $(window).resize(function() {
 
     var $WindowWidth = $(window).width();
     var $FacebookWidth = fbdiv.width();
+    var $PostWidth = Post.width();
     MainContent.css('width', $WindowWidth - ($FacebookWidth + $TotalHorizontalPadding));
+    Post.css('width', $PostWidth - 12);
 });
 
 var main = function() {
@@ -80,7 +83,9 @@ var main = function() {
 
     var $WindowWidth = $(window).width();
     var $FacebookWidth = fbdiv.width();
+    var $PostWidth = Post.width();
     MainContent.css('width', $WindowWidth - ($FacebookWidth + $TotalHorizontalPadding));
+    $('p.img').css('width', $PostWidth - 12);
 };
 
 $(document).load(main());
