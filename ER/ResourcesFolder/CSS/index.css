@@ -1,0 +1,68 @@
+.post-out {
+    border: solid 2px rgba(171, 1, 1, 0.24);
+    border-radius: 5px;
+    margin: 5px 5px 5px 5px;
+    min-width: 100%;
+}
+
+.post {
+    margin: 5px 15px 5px 5px;
+}
+
+.content {
+    margin-left: 10px;
+}
+
+@media (min-width: 992px) {
+
+    .post p img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+    .post p img {
+        max-width: 300px;
+    }
+}
+
+.flickrimg {
+    margin: 2px;
+}
+
+#flickr_badge_wrapper {
+    width: 100%;
+    text-align: center;
+}
+
+.post p img {
+    display: block;
+    margin: 5px auto 0 auto;
+    border-radius: 5px;
+    border: solid 2px rgba(171, 1, 1, 0.24);
+}
+
+.c-button {
+    width: 100%;
+    cursor: pointer;
+    color: #FFFFFF;
+    background-color: #d40000;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.c-button:hover {
+    -webkit-transform: scale(1.025, 1.1);
+    -moz-transform: scale(1.025, 1.1);
+    -ms-transform: scale(1.025, 1.1);
+    -o-transform: scale(1.025, 1.1);
+    transform: scale(1.025, 1.1);
+}

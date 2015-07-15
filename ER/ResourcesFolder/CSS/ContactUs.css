@@ -1,0 +1,58 @@
+/* Written By Tymon Domanko. Contact at Tymon1996@gmail.com for support */
+/* Form Setup */
+.button {
+    border-radius: 5px;
+    width: 16em;
+    margin-top: 2px;
+    background-color: #d40000;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+    min-height: 40px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.button p {
+    text-align: center;
+    padding-top: 7px;
+}
+
+@media (min-width:767px) {
+    #positions .button {
+        width: 35em;
+    }
+}
+/* End Form Setup */
+
+/* Link Colorization Setup */
+#positions a:link {
+    color: #FFFFFf;
+    text-decoration: none;
+}
+
+#positions a:visited {
+    color: #FFFFFf;
+    text-decoration: none;
+}
+
+#positions a:hover {
+    color: #FFFFFf;
+    text-decoration: none;
+}
+
+#positions a:active {
+    color: #FFFFFf;
+    text-decoration: none;
+}
+
+#positions .button:hover {
+    -webkit-transform: scale(1.05, 1.2);
+    -moz-transform: scale(1.05, 1.2);
+    -ms-transform: scale(1.05, 1.2);
+    -o-transform: scale(1.05, 1.2);
+    transform: scale(1.05, 1.2);
+}
+/* End Link Colorization Setup */
