@@ -19,7 +19,7 @@ $(window).resize(function() {
         $(".main-content").height($NewHeight + 5);
     }
     var $footer = '<div class="container-fluid" id="footer-content"><div class="container-fluid" id="left-container">' +
-        '<p>Â©2015 1st Epping Rovers, <a href="http://www.scouts.com.au/">Scouts Australia</a>,' +
+        '<p>©2015 1st Epping Rovers, <a href="http://www.scouts.com.au/">Scouts Australia</a>,' +
         '<a href="http://www.rovers.com.au/"> Rovers Australia</a>, <a href="http://www.nsw.scouts.com.au/">Scouts NSW</a>,' +
         '<a href="http://nsw.rovers.com.au/"> Rovers NSW</a>, <a href="http://www.eppingscouts.com.au/"> Epping Scouts</a></p>' +
         '</div>' +
@@ -59,7 +59,7 @@ var main = function() {
         $(".main-content").height($NewHeight + 5);
     }
     var $footer = '<div class="container-fluid" id="footer-content"><div class="container-fluid" id="left-container">' +
-        '<p>Â©2015 1st Epping Rovers, <a href="http://www.scouts.com.au/">Scouts Australia</a>,' +
+        '<p>©2015 1st Epping Rovers, <a href="http://www.scouts.com.au/">Scouts Australia</a>,' +
         '<a href="http://www.rovers.com.au/"> Rovers Australia</a>, <a href="http://www.nsw.scouts.com.au/">Scouts NSW</a>,' +
         '<a href="http://nsw.rovers.com.au/"> Rovers NSW</a>, <a href="http://www.eppingscouts.com.au/"> Epping Scouts</a></p>' +
         '</div>' +
