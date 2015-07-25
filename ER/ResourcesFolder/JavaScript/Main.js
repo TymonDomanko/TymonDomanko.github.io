@@ -31,7 +31,11 @@ $(window).resize(function() {
 
     var $WindowWidth = $(window).width();
     var $FacebookWidth = fbdiv.width();
-    MainContent.css('width', $WindowWidth - ($FacebookWidth + $TotalHorizontalPadding));
+    var Width = $WindowWidth - ($FacebookWidth + $TotalHorizontalPadding);
+    if ($WindowWidth <= 768) {
+        Width = $WindowWidth - $TotalHorizontalPadding;
+    }
+    MainContent.css('width', Width);
 });
 
 var main = function() {
@@ -69,7 +73,12 @@ var main = function() {
 
     var $WindowWidth = $(window).width();
     var $FacebookWidth = fbdiv.width();
-    MainContent.css('width', $WindowWidth - ($FacebookWidth + $TotalHorizontalPadding));
+    var Width = $WindowWidth - ($FacebookWidth + $TotalHorizontalPadding);
+
+    if ($WindowWidth <= 768) {
+        Width = $WindowWidth - $TotalHorizontalPadding;
+    }
+    MainContent.css('width', Width);
 };
 
 $(document).load(main());
