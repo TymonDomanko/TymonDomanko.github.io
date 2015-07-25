@@ -6,24 +6,11 @@
 }
 
 .post {
-    margin: 5px 15px 5px 5px;
+    margin: 5px 5px 5px 5px;
 }
 
 .content {
     margin-left: 10px;
-}
-
-@media (min-width: 992px) {
-
-    .post p img {
-        max-width: 100%;
-    }
-}
-
-@media (max-width: 991px) {
-    .post p img {
-        max-width: 300px;
-    }
 }
 
 .flickrimg {
@@ -35,7 +22,10 @@
     text-align: center;
 }
 
-.post p img {
+p img {
+    resize: both;
+    max-width: 100%;
+    height: auto;
     display: block;
     margin: 5px auto 0 auto;
     border-radius: 5px;

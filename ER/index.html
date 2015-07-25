@@ -7,7 +7,7 @@
     <!-- Name of page that will show up in the tab -->
     <title>Epping Rovers</title>
     <!-- Loads in jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <!-- Loading in bootstrap to make stuff easier -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -104,6 +104,7 @@
 <!-- End Mobile Title Setup -->
 
 <!-- Setup Main Content -->
+<div class="test">
 <div id="main-content" class="main-content">
 <div id="flickr_badge_wrapper" class="hidden-xs hidden-sm">
                 <script type="text/javascript" src="http://www.flickr.com/badge_code.gne?count=14&display=random&size=thumb&nsid=131599674@N08&raw=1"></script>
@@ -359,11 +360,11 @@ Brush Park, Epping and Hunters Hill Rovers in TWT territory all collected food s
 <p>Hike for Hunger is a state-wide project that Rovers actively participate in, in conjunction with the Wesley Mission's Homeless Kids Outreach Program. Rovers had been collecting canned and non-perishable foods from everywhere and anywhere. They were in shopping centres and on the streets, talking to people about the excellent work that The Wesley Mission does for the underprivileged in Sydney, but also the great work that Rovers does in the community, and that they live up to their motto of &quot;Service&quot;.</p>
 <p>This years hike took place in Sydney, on Saturday, 19th October, 2002, with Rovers from across the State walking across the Sydney Harbour Bridge, and then through Sydney to the offices of The Wesley Mission, where all the food was presented. Over 4,000 cans were collected in all, and it yet again overfilled the cupboards at the centre!!!!!!</p>
 <p>This is the fourth year that NSW Rovers have stepped up to the challenge, and participated in the Hike for Hunger project. It aims to promote the awareness of the needs of homeless and underprivileged people in Sydney, in particular youth at risk. It also acts as a way for collecting much needed food for this worthwhile cause.</p>
-<p><img src="ResourcesFolder/BlogImages/hikeforhunger02a.jpg" alt="hikeforhunger02a" /></p></div></div></div><div class="c-button"> Show more </div><script>
-$(".c-button").click(function(){
-    $(".hideable").toggleClass("hidden");
-    var $text = $(".c-button").text();
-    if ($text == " Show more "){$(".c-button").text(" Show less ")} else {$(".c-button").text(" Show more ")}
+<p><img src="ResourcesFolder/BlogImages/hikeforhunger02a.jpg" alt="hikeforhunger02a" /></p></div></div></div><div class="c-button"> Show more </div><script> var cButton = $(".c-button");
+    cButton.click(function(){
+    cButton.toggleClass("hidden");
+    var $text = cButton.text();
+    if ($text == " Show more "){cButton.text(" Show less ")} else {cButton.text(" Show more ")}
 });
 </script>
 </div>
@@ -372,6 +373,20 @@ $(".c-button").click(function(){
 
 <!-- Sets up Facebook feed -->
     <div id="fb-feed" class="fb-feed hidden-xs hidden-sm">
+        <div class="fb-page" data-href="https://www.facebook.com/EppingRovers"
+         data-width="100%"
+          data-height="5000"
+           data-hide-cover="false"
+            data-show-facepile="true"
+             data-show-posts="true">
+            <div class="fb-xfbml-parse-ignore">
+                <blockquote cite="https://www.facebook.com/EppingRovers">
+                    <a href="https://www.facebook.com/EppingRovers">1st Epping Rovers</a>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+    </div>
     </div>
 
     <!-- End Facebook feed Setup -->

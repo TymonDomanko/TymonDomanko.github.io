@@ -1,7 +1,7 @@
 var fbdiv = $('#fb-feed');
 var footer = $('footer');
 var MainContent = $("#main-content");
-var Post = $('.post');
+
 
 var $TotalHorizontalPadding = 75;
 
@@ -19,7 +19,7 @@ $(window).resize(function() {
         $(".main-content").height($NewHeight + 5);
     }
     var $footer = '<div class="container-fluid" id="footer-content"><div class="container-fluid" id="left-container">' +
-        '<p>©2015 1st Epping Rovers, <a href="http://www.scouts.com.au/">Scouts Australia</a>,' +
+        '<p>?2015 1st Epping Rovers, <a href="http://www.scouts.com.au/">Scouts Australia</a>,' +
         '<a href="http://www.rovers.com.au/"> Rovers Australia</a>, <a href="http://www.nsw.scouts.com.au/">Scouts NSW</a>,' +
         '<a href="http://nsw.rovers.com.au/"> Rovers NSW</a>, <a href="http://www.eppingscouts.com.au/"> Epping Scouts</a></p>' +
         '</div>' +
@@ -31,9 +31,7 @@ $(window).resize(function() {
 
     var $WindowWidth = $(window).width();
     var $FacebookWidth = fbdiv.width();
-    var $PostWidth = Post.width();
     MainContent.css('width', $WindowWidth - ($FacebookWidth + $TotalHorizontalPadding));
-    Post.css('width', $PostWidth - 12);
 });
 
 var main = function() {
@@ -69,23 +67,9 @@ var main = function() {
     footer.append($footer);
     // End footer setup
 
-    // Start FB setup
-    if ($MainContentHeight < $NewHeight){ $MainContentHeight = $NewHeight }
-    $MainContentHeight = $MainContentHeight - 5;
-    // Sets the containing div\'s height
-    fbdiv.height($MainContentHeight);
-    // Changes the height of the page Plugin
-    var $FBFeed = '<div class="fb-page" data-href="https://www.facebook.com/EppingRovers" data-width="100%" data-height="' + $MainContentHeight + '" data-hide-cover="false" data-show-facepile="true" data-show-posts="true">' +
-        '<div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/EppingRovers"><a href="https://www.facebook.com/EppingRovers">1st Epping Rovers</a></blockquote></div> </div> </div>';
-    // Adds the page plugin with custom page height
-    $(".fb-feed").append($FBFeed);
-    // End FB setup
-
     var $WindowWidth = $(window).width();
     var $FacebookWidth = fbdiv.width();
-    var $PostWidth = Post.width();
     MainContent.css('width', $WindowWidth - ($FacebookWidth + $TotalHorizontalPadding));
-    $('p.img').css('width', $PostWidth - 12);
 };
 
 $(document).load(main());
