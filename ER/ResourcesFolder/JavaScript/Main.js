@@ -2,7 +2,6 @@ var fbdiv = $('#fb-feed');
 var footer = $('footer');
 var MainContent = $("#main-content");
 
-
 var $TotalHorizontalPadding = 75;
 
 $(window).resize(function() {
@@ -10,32 +9,24 @@ $(window).resize(function() {
     var $NavagationBarHeight = $("nav").height();
     var $JumbotronHeight = $(".jumbotron").height() + 30;
     var $MobileTitle = $("#mobile-title").height();
-    var $MainContentHeight = MainContent.height();
     var $FooterHeight = footer.height();
+    var $WindowWidth = $(window).width();
 
     // Start footer setup
-    if ($WindowHeight > ($JumbotronHeight + $NavagationBarHeight + $MobileTitle + $MainContentHeight + $FooterHeight + 96)) {
-        var $NewHeight = $WindowHeight - ($NavagationBarHeight + $MobileTitle + $JumbotronHeight + $FooterHeight + 96);
-        $(".main-content").height($NewHeight + 5);
-    }
-    var $footer = '<div class="container-fluid" id="footer-content"><div class="container-fluid" id="left-container">' +
-        '<p>?2015 1st Epping Rovers, <a href="http://www.scouts.com.au/">Scouts Australia</a>,' +
-        '<a href="http://www.rovers.com.au/"> Rovers Australia</a>, <a href="http://www.nsw.scouts.com.au/">Scouts NSW</a>,' +
-        '<a href="http://nsw.rovers.com.au/"> Rovers NSW</a>, <a href="http://www.eppingscouts.com.au/"> Epping Scouts</a></p>' +
-        '</div>' +
-        '<div class="container-fluid" id="right-container">' +
-        '<a href="mailto:CrewLeader#EppingRovers.com?subject=Website Contact" target="_blank"><p>CrewLeader@EppingRovers.com</p>' +
-        '</div> </div>';
-    $('#footer-content').replaceWith($footer);
+    if ($WindowWidth <= 768) {MainContent.css('min-height', $WindowHeight - ($NavagationBarHeight + $MobileTitle + $FooterHeight));}
+    else {MainContent.css('min-height', $WindowHeight - ($NavagationBarHeight + $JumbotronHeight + $FooterHeight));}
     // End footer setup
 
-    var $WindowWidth = $(window).width();
     var $FacebookWidth = fbdiv.width();
     var Width = $WindowWidth - ($FacebookWidth + $TotalHorizontalPadding);
     if ($WindowWidth <= 768) {
         Width = $WindowWidth - $TotalHorizontalPadding;
     }
-    MainContent.css('width', Width);
+    if ($('.panel-group')[0]) {
+        MainContent.css('width', Width);
+    } else {
+        MainContent.css('max-width', Width);
+    }
 });
 
 var main = function() {
@@ -52,16 +43,15 @@ var main = function() {
     var $NavagationBarHeight = $("nav").height();
     var $JumbotronHeight = $(".jumbotron").height() + 30;
     var $MobileTitle = $("#mobile-title").height();
-    var $MainContentHeight = MainContent.height();
     var $FooterHeight = footer.height();
+    var $WindowWidth = $(window).width();
 
     // Start footer setup
-    if ($WindowHeight > ($JumbotronHeight + $NavagationBarHeight + $MobileTitle + $MainContentHeight + $FooterHeight + 96)) {
-        var $NewHeight = $WindowHeight - ($NavagationBarHeight + $MobileTitle + $JumbotronHeight + $FooterHeight + 96);
-        $(".main-content").height($NewHeight + 5);
-    }
+    if ($WindowWidth <= 768) {MainContent.css('min-height', $WindowHeight - ($NavagationBarHeight + $MobileTitle + $FooterHeight));}
+    else {MainContent.css('min-height', $WindowHeight - ($NavagationBarHeight + $JumbotronHeight + $FooterHeight));}
+
     var $footer = '<div class="container-fluid" id="footer-content"><div class="container-fluid" id="left-container">' +
-        '<p>©2015 1st Epping Rovers, <a href="http://www.scouts.com.au/">Scouts Australia</a>,' +
+        '<p>&copy; 2015 1st Epping Rovers, <a href="http://www.scouts.com.au/">Scouts Australia</a>,' +
         '<a href="http://www.rovers.com.au/"> Rovers Australia</a>, <a href="http://www.nsw.scouts.com.au/">Scouts NSW</a>,' +
         '<a href="http://nsw.rovers.com.au/"> Rovers NSW</a>, <a href="http://www.eppingscouts.com.au/"> Epping Scouts</a></p>' +
         '</div>' +
@@ -71,14 +61,17 @@ var main = function() {
     footer.append($footer);
     // End footer setup
 
-    var $WindowWidth = $(window).width();
     var $FacebookWidth = fbdiv.width();
     var Width = $WindowWidth - ($FacebookWidth + $TotalHorizontalPadding);
 
     if ($WindowWidth <= 768) {
         Width = $WindowWidth - $TotalHorizontalPadding;
     }
-    MainContent.css('width', Width);
+    if ($('.panel-group')[0]) {
+        MainContent.css('width', Width);
+    } else {
+        MainContent.css('max-width', Width);
+    };
 };
 
 $(document).load(main());

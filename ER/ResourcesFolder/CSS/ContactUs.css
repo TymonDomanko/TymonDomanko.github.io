@@ -2,7 +2,6 @@
 /* Form Setup */
 .button {
     border-radius: 5px;
-    width: 16em;
     margin-top: 2px;
     background-color: #d40000;
     font-weight: bold;
@@ -18,12 +17,6 @@
 .button p {
     text-align: center;
     padding-top: 7px;
-}
-
-@media (min-width:767px) {
-    #positions .button {
-        width: 35em;
-    }
 }
 /* End Form Setup */
 

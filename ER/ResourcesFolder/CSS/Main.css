@@ -131,9 +131,7 @@ body {
 
 /* Footer Setup */
 .footer {
-    position: static;
     clear: both;
-    bottom: 0;
     width: 100%;
     /* Set the fixed height of the footer here */
     background-color: rgba(171, 1, 1, 0.25);
@@ -317,6 +315,9 @@ a:active {
     font-weight: bold;
 }
 
+.panel {
+    width: 100%;
+}
 /* End Form Colorization Setup */
 
 .hidden {
